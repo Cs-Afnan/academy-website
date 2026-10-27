@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Future Minds Academy</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f9fbff;
+    color:#333;
+}
+
+/* Navbar */
+
+nav{
+    background:#0b3d91;
+    padding:20px 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#cce0ff;
+}
+
+/* Hero */
+
+.hero{
+    height:90vh;
+    background:linear-gradient(rgba(11,61,145,0.7),
+    rgba(11,61,145,0.7)),
+    url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero-content h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:22px;
+    margin-bottom:25px;
+}
+
+.btn{
+    display:inline-block;
+    background:white;
+    color:#0b3d91;
+    padding:14px 28px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#dce8ff;
+}
+
+/* Sections */
+
+section{
+    padding:80px 10%;
+}
+
+.section-title{
+    text-align:center;
+    color:#0b3d91;
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+/* About */
+
+.about{
+    text-align:center;
+    max-width:800px;
+    margin:auto;
+    line-height:1.8;
+}
+
+/* Courses */
+
+.course-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.course-card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+.course-card h3{
+    color:#0b3d91;
+    margin-bottom:10px;
+}
+
+/* Teachers */
+
+.teacher-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.teacher-card{
+    background:white;
+    padding:25px;
+    text-align:center;
+    border-radius:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+.teacher-card h3{
+    color:#0b3d91;
+    margin-bottom:10px;
+}
+
+/* Testimonials */
+
+.testimonial-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.testimonial{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* Contact */
+
+.contact{
+    text-align:center;
+    line-height:2;
+}
+
+/* Footer */
+
+footer{
+    background:#0b3d91;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.hero-content h1{
+font-size:40px;
+}
+
+nav{
+flex-direction:column;
+gap:10px;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<nav>
+
+<div class="logo">Future Minds Academy</div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#courses">Courses</a></li>
+<li><a href="#teachers">Teachers</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Future Minds Academy</h1>
+
+<p>Learn Today. Lead Tomorrow.</p>
+
+<a href="#courses" class="btn">Enroll Now</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="section-title">About Academy</h2>
+
+<div class="about">
+
+<p>
+Future Minds Academy is dedicated to helping students
+excel in academics and professional skills. We provide
+high-quality education, experienced teachers, and a
+supportive learning environment.
+</p>
+
+</div>
+
+</section>
+
+<section id="courses">
+
+<h2 class="section-title">Courses Offered</h2>
+
+<div class="course-grid">
+
+<div class="course-card">
+<h3>Computer Science</h3>
+<p>Programming, web development and problem solving.</p>
+</div>
+
+<div class="course-card">
+<h3>Mathematics</h3>
+<p>Algebra, calculus and exam preparation.</p>
+</div>
+
+<div class="course-card">
+<h3>English Language</h3>
+<p>Writing, speaking and communication skills.</p>
+</div>
+
+<div class="course-card">
+<h3>Physics</h3>
+<p>Concept-based learning for board examinations.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="teachers">
+
+<h2 class="section-title">Our Teachers</h2>
+
+<div class="teacher-grid">
+
+<div class="teacher-card">
+<h3>Ahmed Khan</h3>
+<p>Computer Science Instructor</p>
+</div>
+
+<div class="teacher-card">
+<h3>Sarah Ali</h3>
+<p>Mathematics Instructor</p>
+</div>
+
+<div class="teacher-card">
+<h3>Usman Tariq</h3>
+<p>Physics Instructor</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Student Testimonials</h2>
+
+<div class="testimonial-grid">
+
+<div class="testimonial">
+<p>
+"Future Minds Academy helped me improve my grades significantly."
+</p>
+</div>
+
+<div class="testimonial">
+<p>
+"The teachers are supportive and explain concepts very clearly."
+</p>
+</div>
+
+<div class="testimonial">
+<p>
+"One of the best learning experiences I have had."
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="section-title">Contact Us</h2>
+
+<div class="contact">
+
+<p>Email: info@futuremindsacademy.com</p>
+
+<p>Phone: +92 300 1234567</p>
+
+<p>Location: Karachi, Pakistan</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Future Minds Academy. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>
